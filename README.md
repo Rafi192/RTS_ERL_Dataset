@@ -16,7 +16,7 @@ This dataset is optimized for use with **MongoDB + Vector Search systems** (e.g.
 
 ---
 
-## 📂 Dataset Structure
+##  Dataset Structure
 
 The dataset simulates real e-commerce product entries including:
 
@@ -39,21 +39,17 @@ Each document is structured for:
 ---
 
 ##  How to Access the Data?
-### Option 1: Using MongoDB Atlas (Recommended)
 
-#### Step 1: Install Required Tools
+### Option 1: Using MongoDB Compass (Recommended) 
 
-Download and install one of the following:
-- [MongoDB Compass](https://www.mongodb.com/try/download/compass) — Desktop GUI client
-- [MongoDB Atlas](https://www.mongodb.com/atlas) — Cloud-based version
+MongoDB Compass is the easiest way to access this dataset. It provides a clean visual interface to browse, filter, and export data without writing any code.
 
-#### Step 2: Setup MongoDB Atlas
+#### Step 1: Install MongoDB Compass
 
-1. Create an account on [MongoDB Atlas](https://www.mongodb.com/atlas)
-2. Create a new **cluster**
-3. Create a **database user** with a username and password
-4. Whitelist your **IP address** under Network Access
-5. Copy your **connection string** from the Atlas dashboard
+Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass) — the official desktop GUI for MongoDB.
+
+
+#### Step 2: Get Your Credentials
 
 >  **Note:** Due to security reasons, the full MongoDB URI cannot be shared in this repository. The credentials (username & password) will be provided separately.
 
@@ -61,6 +57,7 @@ Secure connection string format:
 ```
 mongodb+srv://<username>:<password>@cluster0.mongodb.net/
 ```
+
 ---
 
 #### Step 3: Connect via MongoDB Compass
@@ -85,7 +82,31 @@ You will now see all the product documents ready to browse, query, or export.
 
 ---
 
-### Option 2: Using a Local MongoDB Instance
+
+### Option 2: Using MongoDB Atlas (Cloud)
+
+If you prefer a browser-based experience, you can access the data directly through MongoDB Atlas.
+
+#### Step 1: Create an Atlas Account
+
+1. Go to [MongoDB Atlas](https://www.mongodb.com/atlas) and create a free account
+2. Create a new **cluster**
+3. Create a **database user** with a username and password
+4. Whitelist your **IP address** under Network Access
+5. Copy your **connection string** from the Atlas dashboard
+
+#### Step 2: Browse the Dataset
+
+Once your cluster is set up, navigate to:
+```
+Database  →  new_product
+Collection →  new_products
+```
+
+---
+
+
+### Option 3: Using a Local MongoDB Instance
 
 #### Step 1: Install MongoDB Locally
 
